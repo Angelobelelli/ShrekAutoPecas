@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: white;
+  color: black;
+}
+
+/* Contêiner principal */
+.main {
+  position: relative; /* Permite o posicionamento absoluto dos elementos internos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ocupa toda a altura da viewport */
+  width: 100%;
+  overflow: hidden; /* Garante que o conteúdo não ultrapasse o contêiner */
+}
+
+/* Estilo da imagem de fundo */
+.main #imagemdefundo {
+  position: absolute; /* Permite que a imagem ocupe toda a área do contêiner */
+  top: 0;
+
+  width: 100%;
+  height: auto; /* Mantém a proporção da imagem */
+  max-height: 400px; /* Define a altura máxima */
+  object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+  z-index: 1; /* Faz com que a imagem fique atrás do formulário */
+}
+
+::placeholder{
+  color: #B8BCBE;
+  padding-left: 5px;
+}
+
+/* Estilo do card (formulário) */
+.card {
+  position: relative;
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  width: 590px;
+  height: 650px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card h1{
+  font-size: 50px;
+  color: #babd04;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+.card p {
+  font-size: 19px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+/* Estilo do formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Estilo dos inputs e textarea */
+
+  input, textarea {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+  border-color: #156D34;
+  background-color: #b0c73d0e;
+  outline: none;
+}
+
+/* Estilo do botão */
+button {
+  cursor: pointer;
+  background-color: #156D34;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  height: 48px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+button img {
+  margin-right: 8px;
+}
+
+/* Outros estilos */
+h1, p, a {
+  text-align: center;
+}
+
+
+a {
+  color: #156D34;
+}
+.underlines{
+  margin: 28px 0px 10px 0px;
+}

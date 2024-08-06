@@ -1,0 +1,72 @@
+footer{
+    background: linear-gradient(to top, #0b381c, #15612f);
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-direction: column;
+    margin-top: 100px;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+footer .direitosAutorais span{
+    color: #AC32EB;
+    list-style: none;
+    }
+    .light footer{
+    color: white;
+}
+footer ul{
+    display: inline-flex;
+    list-style: none;
+    
+}
+
+footer h1{
+    font-size: 14px;
+    font-weight: 200;
+}
+.geral {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.esquerda > a > i {
+    color: white;
+    display: inline-flex;
+    border-radius: 6px;
+    margin: 0px 5px;
+    height: 36px;
+    width: 36px;
+    font-size: 30px;
+}
+#emailDireita {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#emailDireita p {
+    font-size: 17px;
+}
+#emailDireita i {
+    margin: 0px 10px;
+    font-size: 25px;
+    color: #B1C73D;
+}
+
+footer h1, a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    margin-top: 10px;
+    color: white;
+}

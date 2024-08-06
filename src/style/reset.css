@@ -1,0 +1,35 @@
+header nav ul li a:hover {
+  
+    border-bottom-color: #4e5300; /* Exibe o sublinhado com a cor desejada */
+    transform: scale(1.08); /* Aumenta o tamanho do texto no hover */
+}
+
+/* Estilo para o item de navegação ativo */
+header nav ul li a.active {
+    border-bottom-color: #4e5300; /* Subtítulo permanente para o item ativo */
+    transform: scale(1.08); /* Mantém o aumento do texto para o item ativo, se desejar */
+}
+
+
+.informaçõesAdicionais{
+    background-color:  #6f6a14;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.informaçõesAdicionais p{
+    font-size: 14px;
+    color: white;
+    font-weight: 100;
+    font-family: "Montserrat", sans-serif;
+}   
+
+/*.color1  #e0d859 
+.color2    #dfdb93 
+.color3    #6f6a14  
+.color4    #6ca484  
+.color5    #a4c4b4  
+*/
