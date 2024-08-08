@@ -40,8 +40,6 @@ main{
 .text p{
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
-    font-weight: 100;
-
     margin-bottom: 14px;
 }
 .text h1{
@@ -90,3 +88,81 @@ main{
     border-radius: 3px;
     overflow: hidden;
 }
+
+
+
+@media (max-width: 767.98px) {
+    /* Estilos para o container #sobrenos */
+
+    section{
+        padding: 0px;
+    }
+
+    #sobrenos {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0px;
+        height: 100%;
+    }
+
+    /* Estilos para imagens dentro de #sobrenos */
+    #sobrenos img {
+        width: 70%;
+        height: auto;
+        margin: 0 auto 20px;
+        display: block; /* Corrige o alinhamento das imagens */
+    }
+
+    /* Estilos para o container .text */
+    .text {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .text h1 {
+        line-height: 1.2em;
+        margin: 10px 0;
+        
+    }
+
+    /* Estilos para o container #main */
+    #main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #produtos {
+        width: 90%;
+        padding: 0px;
+        margin: auto;
+    }
+    
+    .produto{
+        width: 85%;
+        height: auto;
+        margin-bottom: auto;
+    }
+
+    .produto img {
+        width: 100%;
+        height: auto;
+    }
+
+    .geral {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Alinhamento centralizado */
+    }
+
+    .informaçõesAdicionais {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
