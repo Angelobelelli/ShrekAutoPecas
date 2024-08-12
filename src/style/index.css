@@ -1,24 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     padding: 0px;
     margin: 0px;
 }
-main img{
+
+main img {
     width: 100%;
     margin-bottom: 50px;
-  
+
 }
 
-main{
+main {
     margin: 0;
 
 }
-.underlines{
+
+.underlines {
     margin: 28px 0px 10px 0px;
 }
 
-#sobrenos{
+#sobrenos {
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -27,59 +29,66 @@ main{
     height: 90vh;
 
 }
-#sobrenos img{
+
+#sobrenos img {
     width: 530px;
     height: 733px;
 
 }
-.text{
+
+.text {
     width: 50%;
     margin-left: 30px;
     line-height: 30px;
 }
-.text p{
+
+.text p {
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 14px;
 }
-.text h1{
+
+.text h1 {
     color: #E4DC50;
     margin-bottom: 12px;
     font-size: 50px;
 }
 
-#produtos{
+#produtos {
     height: 100%;
 }
-#produtos h1{
+
+#produtos h1 {
     font-size: 50px;
     color: #E4DC50;
     margin-top: 50px;
 }
-#main{
+
+#main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+
 }
 
-.produto{
-    border: 1px solid rgb(232, 232, 232);;
-     margin: 10px 7px;
-     border-radius: 20px;
-     padding: 15px;
-     transition: 0.5s;
- 
- 
- }
+.produto {
+    border: 1px solid rgb(232, 232, 232);
+    ;
+    margin: 10px 7px;
+    border-radius: 20px;
+    padding: 15px;
+    transition: 0.5s;
 
-.produto:hover{
+
+}
+
+.produto:hover {
     transform: scale(1.01);
     transition: 0.7s;
     box-shadow: 1px 1px 10px rgb(110, 110, 110);
 }
 
-.underline{
+.underline {
     width: 150px;
     height: 2px;
     position: relative;
@@ -94,7 +103,7 @@ main{
 @media (max-width: 767.98px) {
     /* Estilos para o container #sobrenos */
 
-    section{
+    section {
         padding: 0px;
     }
 
@@ -112,7 +121,8 @@ main{
         width: 70%;
         height: auto;
         margin: 0 auto 20px;
-        display: block; /* Corrige o alinhamento das imagens */
+        display: block;
+        /* Corrige o alinhamento das imagens */
     }
 
     /* Estilos para o container .text */
@@ -124,7 +134,7 @@ main{
     .text h1 {
         line-height: 1.2em;
         margin: 10px 0;
-        
+
     }
 
     /* Estilos para o container #main */
@@ -139,8 +149,8 @@ main{
         padding: 0px;
         margin: auto;
     }
-    
-    .produto{
+
+    .produto {
         width: 85%;
         height: auto;
         margin-bottom: auto;
@@ -154,7 +164,8 @@ main{
     .geral {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Alinhamento centralizado */
+        align-items: center;
+        /* Alinhamento centralizado */
     }
 
     .informaçõesAdicionais {
@@ -164,5 +175,13 @@ main{
     nav {
         display: none;
     }
-}
 
+    .mobile {
+        display: block;
+    }
+
+    .mobile ul li a {
+        text-decoration: none;
+    }
+
+}

@@ -1,0 +1,123 @@
+.mobile ul li {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+
+}
+
+.mobile a {
+    color: #babd04;
+}
+
+.mobile ul {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#btn-menu {
+    display: none;
+}
+
+.btn-abrir-menu span {
+    color: #babd04;
+    font-size: 35px;
+    display: none;
+}
+
+.menu-mobile {
+    height: 100vh;
+    background-color: #0d0f0e;
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: 0.2s;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.menu-mobile.abrir-menu {
+    width: 70%;
+
+}
+
+.menu-mobile.abrir-menu~.overlay-menu {
+    display: block;
+}
+
+.menu-mobile .btn-fechar span {
+    color: #babd04;
+    font-size: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-mobile .btn-fechar {
+    padding: 20px 5%;
+}
+
+.menu-mobile nav ul li a {
+    width: 100%;
+    display: flex;
+    padding: 20px 4%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    justify-content: flex-start;
+    margin-left: 15px;
+    z-index: 99999;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: #babd04;
+    width: 99.1%;
+    text-align: right;
+    color: black;
+    border-radius: 20px;
+
+}
+
+.overlay-menu {
+    background-color: rgba(0, 0, 0, 0.71);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 888;
+    display: none;
+}
+
+
+@media (max-width: 767.98px) {
+
+    /* Estilos para o container #sobrenos */
+    header {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header img {
+        margin: 10px;
+    }
+
+    .card {
+        width: 93%;
+    }
+
+    #btn-menu {
+        display: flex;
+    }
+
+    .btn-abrir-menu span {
+        display: flex;
+        margin-right: 20px;
+    }
+
+
+
+}
