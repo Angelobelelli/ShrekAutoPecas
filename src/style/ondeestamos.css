@@ -1,75 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     padding: 0px;
     margin: 0px;
 }
 
 body {
-        
-        color: rgb(26, 26, 26);
-        font-family: "Montserrat", sans-serif;
-        font-weight: normal;
-       
-}
-   section{
-    width: 1250px;
-        margin: 0 auto; /* Centraliza horizontalmente */
-        padding: 0px 50px;
-        display: flex;
-        flex-direction: column;
-   }
 
-header{
+    color: rgb(26, 26, 26);
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+
+}
+
+section {
+    width: 1250px;
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-header nav ul {
+header .desktop ul {
     display: flex;
     list-style: none;
 }
 
-header nav ul li {
-    margin: 0 10px; /* Espaçamento entre os itens */
-    transition: color 0.5s, transform 0.5s, border-bottom 0.5s; /* Transições suaves */
+header .desktop ul li {
+    margin: 0 10px;
+    /* Espaçamento entre os itens */
+    transition: color 0.5s, transform 0.5s, border-bottom 0.5s;
+    /* Transições suaves */
 }
 
-header nav ul li a {
-    display: inline-block; /* Garante que o border-bottom afete apenas o texto */
+header .desktop ul li a {
+    display: inline-block;
+    /* Garante que o border-bottom afete apenas o texto */
     color: black;
-    text-decoration: none; /* Remove o sublinhado padrão */
-    padding-bottom: 5px; /* Adiciona espaço para o sublinhado */
-    border-bottom: 2px solid transparent; /* Define o sublinhado padrão invisível */
-    transition: color 0.5s, transform 0.5s, border-bottom-color 0.5s; /* Transições suaves */
+    text-decoration: none;
+    /* Remove o sublinhado padrão */
+    padding-bottom: 5px;
+    /* Adiciona espaço para o sublinhado */
+    border-bottom: 2px solid transparent;
+    /* Define o sublinhado padrão invisível */
+    transition: color 0.5s, transform 0.5s, border-bottom-color 0.5s;
+    /* Transições suaves */
 }
-main{
-    margin-top: 100px ;
- 
+
+main {
+    margin-top: 100px;
+
 }
-main h1{
+
+main h1 {
     color: #babd04;
     font-size: 56px;
 }
-main p{
+
+main p {
     text-align: justify;
-     width: 98%;
+    width: 98%;
 }
 
 
-.localizações{
+.localizações {
     color: #979da8;
     line-height: 30px;
 }
 
-.informacoesGerais{
+.informacoesGerais {
     width: 100%;
 
 }
-.informacoesGerais h1{
+
+.informacoesGerais h1 {
     color: #babd04;
 }
+
 .googlemaps {
 
     display: flex;
@@ -80,7 +94,7 @@ main p{
 
 
 
-.underline{
+.underline {
     width: 150px;
     height: 2px;
     position: relative;
@@ -89,7 +103,8 @@ main p{
     border-radius: 3px;
     overflow: hidden;
 }
-.underlines{
+
+.underlines {
     width: 100%;
     height: 1px;
     position: relative;
@@ -102,38 +117,51 @@ main p{
 @media (max-width: 767.98px) {
     /* Estilos para o container #sobrenos */
 
-    body{
-      width: 100%;
+    body {
+        width: 100%;
     }
-    main{
+
+    main {
         margin: 20px;
     }
-    section{
+
+    section {
         width: 90%;
         padding: 0px;
         margin: auto;
     }
-     
-    iframe{
+
+    iframe {
         width: 100%;
         margin: 50px 0px;
     }
-    .informacoes{
+
+    .informacoes {
         display: flex;
         flex-direction: column;
     }
+
     .geral {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Alinhamento centralizado */
+        align-items: center;
+        /* Alinhamento centralizado */
     }
 
-    header .informaçõesAdicionais{
+    header .informaçõesAdicionais {
         display: none;
     }
 
     nav {
         display: none;
     }
-}
 
+    .mobile {
+        display: block;
+    }
+
+    .mobile ul li a {
+        text-decoration: none;
+    }
+
+}
