@@ -1,39 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Para controle mais consistente do layout */
 }
 
 main img {
     width: 100%;
     margin-bottom: 50px;
-
 }
 
 main {
     margin: 0;
-
 }
 
 .underlines {
-    margin: 28px 0px 10px 0px;
+    margin: 28px 0 10px;
 }
 
+/* Seção Sobre Nós */
 #sobrenos {
     display: flex;
     flex-direction: row;
-    align-content: center;
+    align-items: center; /* Centralizando verticalmente */
     justify-content: center;
-    align-items: center;
     height: 90vh;
-
 }
 
 #sobrenos img {
     width: 530px;
-    height: 733px;
-
+    height: 733px; /* Mantendo a altura original */
 }
 
 .text {
@@ -54,6 +51,7 @@ main {
     font-size: 50px;
 }
 
+/* Seção Produtos */
 #produtos {
     height: 100%;
 }
@@ -68,64 +66,99 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
+/* Ajuste as regras para .produto */
 .produto {
     border: 1px solid rgb(232, 232, 232);
-    ;
     margin: 10px 7px;
     border-radius: 20px;
     padding: 15px;
-    transition: 0.5s;
-
-
+    transition: transform 0.5s, box-shadow 0.5s;
+    width: calc(33.33% - 14px); /* Ajusta para três colunas */
 }
 
 .produto:hover {
     transform: scale(1.01);
-    transition: 0.7s;
     box-shadow: 1px 1px 10px rgb(110, 110, 110);
 }
 
+/* Sublinha */
 .underline {
     width: 150px;
     height: 2px;
-    position: relative;
     background-color: #a58d07;
     margin-bottom: 10px;
     border-radius: 3px;
-    overflow: hidden;
 }
 
+/* Seção Parallax */
+.parallax {
+    position: relative;
+    background-image: url('/src/img/Corvette Z06 Z07 Performance Package 1.jpeg');
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
 
+.parallax::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.767); /* Escurece a imagem */
+    z-index: 1;
+}
 
+.content {
+    position: relative;
+    z-index: 2; /* Garante que o texto fique acima da camada escura */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 70%;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1.2em;
+}
+
+/* Media Queries para Responsividade */
 @media (max-width: 767.98px) {
-    /* Estilos para o container #sobrenos */
-
     section {
-        padding: 0px;
+        padding: 0;
     }
 
     #sobrenos {
-        display: flex;
-        flex-direction: column;
+        flex-direction: column; /* Mudando para coluna em telas pequenas */
         align-items: flex-start;
         width: 100%;
-        padding: 0px;
-        height: 100%;
+        height: auto; /* Ajustando para auto para melhor comportamento */
+        padding: 0;
     }
 
-    /* Estilos para imagens dentro de #sobrenos */
     #sobrenos img {
         width: 70%;
-        height: auto;
-        margin: 0 auto 20px;
+        height: auto; /* Mantendo proporções da imagem */
+        margin: 0 auto 20px; /* Centralizando a imagem */
         display: block;
-        /* Corrige o alinhamento das imagens */
     }
 
-    /* Estilos para o container .text */
     .text {
         width: 90%;
         margin: 0 auto;
@@ -134,54 +167,61 @@ main {
     .text h1 {
         line-height: 1.2em;
         margin: 10px 0;
-
     }
 
-    /* Estilos para o container #main */
     #main {
-        display: flex;
-        flex-wrap: wrap;
         justify-content: center;
+    }
+
+    /* Mantenha três colunas em telas pequenas */
+    .produto {
+        width: calc(50% - 14px); /* Muda para duas colunas */
+    }
+
+    @media (max-width: 480px) {
+        /* Em telas muito pequenas, mude para uma coluna */
+        .produto {
+            width: calc(100% - 14px); /* Uma coluna */
+        }
     }
 
     #produtos {
         width: 90%;
-        padding: 0px;
         margin: auto;
-    }
-
-    .produto {
-        width: 85%;
-        height: auto;
-        margin-bottom: auto;
     }
 
     .produto img {
         width: 100%;
-        height: auto;
+        height: auto; /* Mantendo a proporção da imagem */
     }
 
     .geral {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        /* Alinhamento centralizado */
+        align-items: center; /* Alinhamento centralizado */
     }
 
     .informaçõesAdicionais {
-        display: none;
+        display: none; /* Mantendo a exibição oculta */
     }
 
     nav {
-        display: none;
+        display: none; /* Mantendo a navegação oculta */
     }
 
     .mobile {
-        display: block;
+        display: block; /* Exibindo elementos para mobile */
     }
 
     .mobile ul li a {
-        text-decoration: none;
+        text-decoration: none; /* Removendo sublinhado dos links */
     }
 
+    .parallax {
+        height: 600px; /* Ajustando altura da seção parallax */
+    }
+
+    .content {
+        width: 96%; /* Ajustando a largura do conteúdo em telas pequenas */
+    }
 }
